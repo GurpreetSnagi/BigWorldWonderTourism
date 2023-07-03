@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tourism Portal -  Hotels, and Car Rentals</title>
+  <script src = "script.js"></script>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <header>
+    <h1>Big World Wonder</h1>
+  </header>
+
+  <nav>
+    <ul>
+      
+       <li><a href="index.html">Hotels</a></li>
+      <li><a href="car.html">Car Rentals</a></li>
+      <li><a href="#">Holidays</a></li>
+      <li><a href="#">Deals</a></li>
+    </ul>
+  </nav>
+  <div class="image-container">
+    <div class="scrollable">
+      <img src="images/hotel.jpg" alt="Image 1">
+      <img src="images/chair.jpg" alt="Image 2">
+      <img src="images/car1.jpg" alt="Image 3">
+      <img src="images/banff.jpg" alt="Image 4">
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+  <div class="container">
+    <form id="loginForm" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" oninput="valUsername()"  />
+													<p id="loginU" style="color: orange;"></p>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" oninput="valPassword()"  />
+													<p id="loginP" style="color: orange;"></p>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Login">
+      </div>
+    </form>
+  </div>
+  
+
+  <section>
+    <h2>Find Cheap Flights, Hotels, and Car Rentals</h2>
+    <p>Search and compare prices for your next trip.</p>
+    <!-- Additional content goes here -->
+  </section>
+
+  <footer>
+    &copy; 2023 Tourism Portal. All rights reserved.
+  </footer>
+</body>
+</html>
+ 
+ <script>
+function validateForm() {
+  let x = document.forms["loginForm"]["username"].value;
+  if (x == "") {
+    alert("Form must be filled out");
+    return false;
+  }
+}
+
+     function valUsername() {
+	 var x = document.getElementById("username").value;
+	 var regex =/^[A-Za-z][A-Za-z0-9 _]{4,14}$/
+	 var res = regex.test(x);
+	        
+            if ( res == false){
+			    
+                document.getElementById("loginU").innerHTML = "Enter Correct Format!";
+				return false;
+                              } 
+			else {
+                document.getElementById("loginU").innerHTML = "";
+				return true;
+                 }
+	 }
+	 
+	 
+	 
+    function valPassword() 
+    {
+	 var x = document.getElementById("password").value;
+	 var regex =/^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+	 var res = regex.test(x);
+	        
+            if ( res == false){
+			    
+                document.getElementById("loginP").innerHTML = "**Password contains (6-16) characters!";
+				
+				
+				return false;
+            } 
+			else {
+                document.getElementById("loginP").innerHTML = "";
+				return true;
+            }
+	 }
+	 
+	 
+</script>	 

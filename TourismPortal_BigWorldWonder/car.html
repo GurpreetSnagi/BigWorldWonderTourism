@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tourism Portal -  Hotels, and Car Rentals</title>
+  <script src = "script.js"></script>
+  <link rel="stylesheet" href="css/car.css">
+
+
+</head>
+<body>
+  <header>
+    <h1>Big World Wonder</h1>
+  </header>
+
+  <nav>
+    <ul>
+      
+      <li><a href="index.html">Hotels</a></li>
+      <li><a href="car.html">Car Rentals</a></li>
+      <li><a href="#">Holidays</a></li>
+      <li><a href="#">Deals</a></li>
+    </ul>
+    <a href="login.html">
+      <button type="button" class="login">Login</button>
+    </a>
+    <a href="signup.html">
+      <button type="button" class="SignUp">Sign Up</button>
+    </a>
+    
+    
+  </nav>
+  <div class="image-container">
+    <div class="scrollable">
+      <img src="images/hotel.jpg" alt="Image 1">
+      <img src="images/chair.jpg" alt="Image 2">
+      <img src="images/car1.jpg" alt="Image 3">
+      <img src="images/banff.jpg" alt="Image 4">
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="search-section">
+        <h2>Search for Cars</h2>
+        <form>
+          <input type="text" placeholder="Pick-up Location" id="pickup-input">
+          <input type="date" id="pickup-date-input">
+          <input type="time" id="pickup-time-input">
+          <input type="text" placeholder="Drop-off Location" id="dropoff-input">
+          <input type="date" id="dropoff-date-input">
+          <input type="time" id="dropoff-time-input">
+          <button type="submit">Search</button>
+        </form>
+      </section>
+  
+      <section class="results-section">
+        
+        <div class="car-card">
+          <img src="images/sedan.jpg" alt="Car Image">
+        
+          <p>Type: Sedan</p>
+          <p>Price: $50 per day</p>
+          <p>Rating: 4.5/5</p>
+          <button>Book Now</button>
+        </div>
+  
+        <div class="car-card">
+          <img src="images/suv.jpg" alt="Car Image">
+         
+          <p>Type: SUV</p>
+          <p>Price: $80 per day</p>
+          <p>Rating: 4/5</p>
+          <button>Book Now</button>
+        </div>
+      </section>
+
+  <section>
+    <h2>Find Cheap Flights, Hotels, and Car Rentals</h2>
+    <p>Search and compare prices for your next trip.</p>
+    <!-- Additional content goes here -->
+  </section>
+
+  <footer>
+    &copy; 2023 Tourism Portal. All rights reserved.
+  </footer>
+</body>
+</html>
+ 

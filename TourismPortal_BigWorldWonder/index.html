@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tourism Portal -  Hotels, and Car Rentals</title>
+  <script src = "script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+  <header>
+    <h1>Big World Wonder</h1>
+  </header>
+
+  <nav>
+    <ul>
+      
+        <li><a href="index.html">Hotels</a></li>
+      <li><a href="car.html">Car Rentals</a></li>
+      <li><a href="#">Holidays</a></li>
+      <li><a href="#">Deals</a></li>
+    </ul>
+    <a href="login.html">
+      <button type="button" class="login">Login</button>
+    </a>
+    <a href="signup.html">
+      <button type="button" class="SignUp">Sign Up</button>
+    </a>
+    
+    
+  </nav>
+  <div class="image-container">
+    <div class="scrollable">
+      <img src="images/hotel.jpg" alt="Image 1">
+      <img src="images/chair.jpg" alt="Image 2">
+      <img src="images/car1.jpg" alt="Image 3">
+      <img src="images/banff.jpg" alt="Image 4">
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+  <div class="container">
+    <h1>Search Your Hotel</h1>
+    <div class="search-bar">
+      <input type="text" class="search-input" id="destination" placeholder="Destination">
+      <input type="date" class="date-input" id="start-date" placeholder="Start Date">
+      <input type="date" class="date-input" id="end-date" placeholder="End Date">
+      <input type="number" class="number" placeholder="Number of Rooms" id="rooms-input">
+      <button class="search-button" onclick="search()">Search</button>
+    </div>
+  </div>
+  
+  <section class="results-section">
+  
+    <div class="hotel-card">
+      <img src="images/hyatt.jpg" alt="Hotel Image">
+      <h3>Hyatt Residence</h3>
+      <p>Address: 123 Main Street, Toronto</p>
+      <p>Price: $100 per night</p>
+      <p>Rating: 4.5/5</p>
+      <button>Book Now</button>
+    </div>
+
+    <div class="hotel-card">
+      <img src="images/radisson.jpg" alt="Hotel Image">
+      <h3>Radisson Blu</h3>
+      <p>Address: 456 Elm Street, Toronto</p>
+      <p>Price: $150 per night</p>
+      <p>Rating: 4/5</p>
+      <button>Book Now</button>
+    </div>
+  </section>
+  
+
+  <section>
+    <h2>Find Cheap Flights, Hotels, and Car Rentals</h2>
+    <p>Search and compare prices for your next trip.</p>
+    <!-- Additional content goes here -->
+  </section>
+
+  <footer>
+    &copy; 2023 Tourism Portal. All rights reserved.
+  </footer>
+</body>
+</html>
+ 

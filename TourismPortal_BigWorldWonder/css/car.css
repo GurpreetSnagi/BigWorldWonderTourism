@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #0054a6;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #0054a6;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  .image-container {
+width: 100%;
+overflow-x: scroll;
+white-space: nowrap;
+}
+
+.scrollable {
+display: inline-block;
+}
+
+img {
+display: inline-block;
+width: 300px; /* Adjust the image width as needed */
+height: auto;
+margin-right: 10px; /* Add spacing between images */
+}
+.container {
+    max-width: 100%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+
+  .login{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .SignUp{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .results-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+
+input[type="text"],
+input[type="date"],
+input[type="time"]
+{
+  padding: 10px;
+  background-color: white;
+}
+button {
+  padding: 10px;
+  background-color: hsl(122, 39%, 49%);
+}
+
+.results-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.car-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
